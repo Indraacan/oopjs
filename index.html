@@ -1,12 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <title>Document</title>
 </head>
+
 <body>
-    
+    <div>
+        <h2 style="text-align: center;">Daftar Destinasi Terbaik di Indonesia</h2>
+    </div>
+    <div class="container">
+        <div id="list" class="row">
+
+        </div>
+
+        <div id="wanderlink" class="row"></div>
+        <button class="btn btn-primary" onclick="previous()">Previous</button>
+        <button class="btn btn-primary" onclick="next()">Next</button>
+    </div>
     <script src="index.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="fetchData.js"></script>
 </body>
+
 </html>
